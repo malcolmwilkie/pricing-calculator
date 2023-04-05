@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing Calculator</title>
+        <link rel="stylesheet" href="./assets/CSS/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="section">
+            <div class="container">
+                <h1>Photo pricing calculator coding project</h1>
+            </div>
+
+        </div>
+        <div class="section section__calculator">
+            <div class="container">
+                <!-- Pricing Calculator -->
+                <div class="pricing__container">
+                    <!-- LEFT Side -->
+                    <div class="pricing__left">
+                        <!-- Top Row -->
+                        <div class="pricing__left-top multi__row">
+                            <!-- Intro text -->
+                            <div class="pricing__box">
+                                <h3>Build your photo package</h3>
+                                <p>
+                                    Every product photography shoot is unique! 
+                                    Use our pricing calculator to get an estimate 
+                                    on how much your shoot’s final total will be.
+                                </p>
+                            </div>
+
+                            <!-- Number of Photos -->
+                            <div class="pricing__box center__flex light__color">
+                                <span class="center__text">Number of Photos</span>
+                                <!-- # of Photo Counter -->
+                                <div class="counter__wrapper">
+                                    <a id="counter-subtract" href="#" class="counter minus">
+                                        <div class="step__down-icon"></div>
+                                    </a>
+                                    <input type="text" class="counter__input" required>
+                                    <a id="counter-add" href="#" class="counter plus">
+                                        <div class="step__icon">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7V12H7V7H12V5H7V0H5V5H0V7H5Z" fill="black"></path>
+                                            </svg>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                            
+                        <!-- Middle Row -->
+                        <div class="pricing__left-middle">
+                            <!-- Number of Products -->
+                            <div class="pricing__box center__flex dark__color">
+                                                    
+                                <div class="pricing__box-title-wrapper">
+                                    <span>Number of Products</span>
+                                    <div id="photoNumber" class="light__color">1</div>
+                                </div>
+
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Row -->
+                        <div class="pricing__left-bottom multi__row">
+                            <!-- In South Florida? -->
+                            <div class="pricing__box center__flex light__color">
+                                <span class="center__text">In South Florida?</span>
+                                <!-- Round Toggle -->
+                                <div class="toggle__container">
+                                    <span class="no__margin">No</span>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="toggle round"></span>
+                                        </label>
+                                    </div>
+                                    <span class="no__margin">Yes</span>
+                                </div>
+                            </div>
+
+                            <!-- High Priority -->
+                            <div class="pricing__box center__flex">
+                                <span class="center__text">High Priority?</span>
+                                <!-- Round Toggle -->
+                                <div class="toggle__container">
+                                    <span class="no__margin">No</span>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="toggle round"></span>
+                                        </label>
+                                    </div>
+                                    <span class="no__margin">Yes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /LEFT Side -->
+
+
+                    <!-- RIGHT side -->
+                    <div class="pricing__right">
+                        <!-- Top Row -->
+                        <div class="pricing__left-top multi__row">
+                            <!-- In studio switch -->
+                            <div class="pricing__box center__flex">
+                                <div class="lever__section">
+                                    <span class="center__text">In studio</span>
+                                    <!-- Lever -->
+                                    <div class="lever__container">
+                                        <div>
+                                            <label class="lever__switch">
+                                                <input type="checkbox">
+                                                <span class="lever rectangle"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- /Lever -->
+                                    <span class="center__text top__margin">On location</span>
+                                </div>
+                            </div>
+                            <!-- /In studio switch -->
+
+                            <!-- With producer -->
+                            <div class="pricing__box center__flex dark__color">
+                                <div class="lever__section">
+                                    <span class="center__text">Standard team</span>
+                                    <!-- Lever -->
+                                    <div class="lever__container">
+                                        <div>
+                                            <label class="lever__switch">
+                                                <input type="checkbox">
+                                                <span class="lever rectangle"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- /Lever -->
+                                    <span class="center__text top__margin">with producer</span>
+                                </div>
+                            </div>
+                            <!-- /With producer -->
+                        </div>
+                            
+                        <!-- Middle Row -->
+                        <div class="pricing__left-middle">
+                            <!-- Total cost -->
+                            <div class="pricing__box left__flex light__color">
+                                <span>Total:</span>                       
+                                <div class="cost__output">
+                                    $2790
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Row -->
+                        <div class="pricing__left-bottom multi__row">
+                            <!-- Save my package -->
+                            <div class="pricing__box left__flex dark__color calculator-form-email">
+                                <span class="email__section-title">Save my package:</span>
+                                <!-- Email section -->
+                                <div>
+                                    <form role="form">
+                                        <input type="email" placeholder="Your Email" maxlength="256" class="package__email-input" required>
+                                        <br />
+                                        <input type="submit" value="Submit" class="calculator-button" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /RIGHT side -->
+                </div>
+                <!-- /Pricing Calculator -->
+            </div>
+        </div>
+      <script src="./assets/js/main.js"></script>  
+    </body>
+</html>
